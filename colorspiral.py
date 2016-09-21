@@ -54,5 +54,9 @@ def otherpattern():
         x = x + 1
         c = c + 0.1
 
-
+fourcolorspiral()
 otherpattern()
+sixcolorspiral() 
+
+###going to add a function that adds a sort of "UI" in to it, where you press keys and you can activate a different function 
+###graphic. Maybe a small game 
