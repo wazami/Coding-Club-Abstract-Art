@@ -4,31 +4,31 @@ t = turtle.Pen()
 turtle.bgcolor("black")
 
 def sixcolorspiral():
-    turtle.clearscreen()
-    turtle.bgcolor("black") 
+    turtle.resetscreen()
+    turtle.bgcolor("black")
     sides = 6
     colors = ["red", "yellow", "blue", "orange", "green", "purple"]
-    for x in range(20):
+    for x in range(360):
         t.pencolor(colors[x%sides])
         t.forward(x * 3/sides + x)
         t.left(360/sides + 1)
         t.width(x*sides/200)
 
 def fourcolorspiral():
-    turtle.clearscreen()
+    turtle.resetscreen()
     turtle.bgcolor("black")
     sides = 4
     colors = ["red", "yellow", "blue", "orange", "green", "purple"]
-    for x in range(20):
+    for x in range(360):
         t.pencolor(colors[x%sides])
         t.forward(x * 3/sides + x)
         t.left(360/sides + 1)
         t.width(x*sides/200)
-
+        
 def otherpattern():
+    turtle.reset()
     turtle.clearscreen()
-    turtle.bgcolor('black')
-
+    turtle.bgcolor("black")
     c = 0
     x = 0
 
@@ -54,9 +54,7 @@ def otherpattern():
         x = x + 1
         c = c + 0.1
 
+ 
+sixcolorspiral()
 fourcolorspiral()
-otherpattern()
-sixcolorspiral() 
-
-###going to add a function that adds a sort of "UI" in to it, where you press keys and you can activate a different function 
-###graphic. Maybe a small game 
+otherpattern() 
